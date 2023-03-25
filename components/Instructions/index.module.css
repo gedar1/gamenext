@@ -1,0 +1,18 @@
+.containerItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: fit-content;
+    background-color: powderblue;
+    margin: 20px;
+    border-radius: 20px;
+   
+  }
+  .pLorem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
