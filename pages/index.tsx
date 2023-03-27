@@ -1,9 +1,10 @@
-import Head from "next/head";
-import { Inter } from "next/font/google";
-import Instruction from "../components/Instructions/index";
-import styles from "@/styles/Home.module.css";
+import Head from 'next/head'
+import { Inter } from 'next/font/google'
+import Instruction from '../components/Instructions/index'
+import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -16,9 +17,13 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.center}>
-          <Instruction />
+          <div className={styles.containerItems}>
+            <Link href="./juegoinicio/juego">
+              <h1>Jugar</h1>
+            </Link>
+          </div>
         </div>
       </main>
     </>
-  );
+  )
 }

@@ -1,7 +1,8 @@
+import Link from 'next/link'
 import React from 'react'
 import styles from './index.module.css'
 
-const Intruction = () => {
+const Instruction = () => {
   return (
     <div className={styles.containerItems}>
       <h1>Instrucciones</h1>
@@ -12,10 +13,12 @@ const Intruction = () => {
         nam.
       </p>
       <span>
-        <button> Jugar </button>
+        <Link href="/juegoplay">
+          <button> Jugar </button>
+        </Link>
       </span>
     </div>
   )
 }
 
-export default Intruction
+export default Instruction
